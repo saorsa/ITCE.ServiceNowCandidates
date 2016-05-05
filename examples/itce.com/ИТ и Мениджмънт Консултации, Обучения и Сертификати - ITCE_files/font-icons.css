@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'itce';
+  src: url('../font/itce.eot?94027722');
+  src: url('../font/itce.eot?94027722#iefix') format('embedded-opentype'),
+       url('../font/itce.woff?94027722') format('woff'),
+       url('../font/itce.ttf?94027722') format('truetype'),
+       url('../font/itce.svg?94027722#itce') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'itce';
+    src: url('../font/itce.svg?94027722#itce') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "itce";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-close:before { content: '\e800'; } /* '' */
+.icon-email:before { content: '\e801'; } /* '' */
+.icon-menu:before { content: '\e802'; } /* '' */
+.icon-phone:before { content: '\e803'; } /* '' */
+.icon-pin:before { content: '\e804'; } /* '' */
+.icon-profile:before { content: '\e805'; } /* '' */
+.icon-search:before { content: '\e806'; } /* '' */
+.icon-facebook:before { content: '\e807'; } /* '' */
+.icon-linkedin:before { content: '\e808'; } /* '' */
+.icon-plane:before { content: '\e809'; } /* '' */
+.icon-google:before { content: '\e80a'; } /* '' */
+.icon-bulb:before { content: '\e80b'; } /* '' */
+.icon-head:before { content: '\e80c'; } /* '' */
+.icon-tree:before { content: '\e80d'; } /* '' */
+.icon-architecture:before { content: '\e80e'; } /* '' */
+.icon-cake:before { content: '\e80f'; } /* '' */
+.icon-calculator:before { content: '\e810'; } /* '' */
+.icon-certificate:before { content: '\e811'; } /* '' */
+.icon-clock:before { content: '\e812'; } /* '' */
+.icon-computer:before { content: '\e813'; } /* '' */
+.icon-directions:before { content: '\e814'; } /* '' */
+.icon-doc-clean:before { content: '\e815'; } /* '' */
+.icon-doc-computer:before { content: '\e816'; } /* '' */
+.icon-doc-gmat:before { content: '\e817'; } /* '' */
+.icon-doc-pencil:before { content: '\e818'; } /* '' */
+.icon-gentleman:before { content: '\e819'; } /* '' */
+.icon-globe:before { content: '\e81a'; } /* '' */
+.icon-handshake:before { content: '\e81b'; } /* '' */
+.icon-layers:before { content: '\e81c'; } /* '' */
+.icon-lock:before { content: '\e81d'; } /* '' */
+.icon-monitor:before { content: '\e81e'; } /* '' */
+.icon-pie:before { content: '\e81f'; } /* '' */
+.icon-presentation:before { content: '\e820'; } /* '' */
+.icon-question:before { content: '\e821'; } /* '' */
+.icon-refresh:before { content: '\e822'; } /* '' */
+.icon-settings:before { content: '\e823'; } /* '' */
+.icon-stock:before { content: '\e824'; } /* '' */
+.icon-arrow-down-bold:before { content: '\e825'; } /* '' */
+.icon-arrow-down:before { content: '\e826'; } /* '' */
+.icon-arrow-left-bold:before { content: '\e827'; } /* '' */
+.icon-arrow-left:before { content: '\e828'; } /* '' */
+.icon-arrow-right-bold:before { content: '\e829'; } /* '' */
+.icon-arrow-right:before { content: '\e82a'; } /* '' */
+.icon-arrow-up-bold:before { content: '\e82b'; } /* '' */
+.icon-arrow-up:before { content: '\e82c'; } /* '' */
+.icon-plus:before { content: '\e82d'; } /* '' */

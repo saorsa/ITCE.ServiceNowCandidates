@@ -7,8 +7,8 @@ module.exports = function (grunt) {
 			build : {
 				files : {
 					'build/website/website.min.js' : ['src/website/website.js'],
-					'build/pastebin/fr/<%= pkg.name %>.min.js' : ['src/pastebin/fr/<%= pkg.name %>.js'],
-					'build/pastebin/de/<%= pkg.name %>.min.js' : ['src/pastebin/de/<%= pkg.name %>.js']
+					'build/jsfiddle/fr/jsfiddle.fr.min.js' : ['src/jsfiddle/fr/*.js'],
+					'build/jsfiddle/de/jsfiddle.de.min.js' : ['src/jsfiddle/de/*.js']
 				}
 			}
 		},

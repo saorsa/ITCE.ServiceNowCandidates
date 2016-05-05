@@ -1,20 +1,21 @@
 var ServiceNowAdvertisment = function (options) {
 	var options = options || {
-		parentClass: 'top-icon-row',
+		parent: '.adv',
 		container: 'span',
 		containerClass: 'sn-adv',
-		target: '_blank'
+		target: '_blank',
+		action : 'insert'
 	};
 	var self = this;
 	self.language = '';
 	var advertismentResources = [{
 			locale : 'de',
 			text : 'Haben Sie auf JavaScript programmieren?  Lösen Sie bitte folgende Aufgabe',
-			url: '#'
+			url: 'http://jsfiddle.net/anjc4qe0/'
 		}, {
 			locale : 'fr',
 			text : 'Vous avez déjà intégré du JavaScript? Il faut résoudre cette tâche. ',
-			url: '#'
+			url: 'http://jsfiddle.net/exgcxtvo/'
 		}
 	];
 	this.init = function () {
@@ -23,15 +24,22 @@ var ServiceNowAdvertisment = function (options) {
 	};
 	this.getOptions = function () { return options; };
 	this.insertAdvertisment = function () {
-		var container = document.getElementsByClassName(options.parentClass)[0];
+		var container = document.querySelector(options.parent);
 		var advertisment = document.createElement(options.container);
+		advertisment.className = options.containerClass;
 		var link = document.createElement('a');
 		link.href = self.language.url;
 		link.innerHTML = self.language.text;
 		link.target = options.target;
-		link.class = self.language.text;
 		advertisment.appendChild(link);
-		container.appendChild(advertisment);
+		switch(options.action) {
+			case 'append':
+				container.appendChild(advertisment);
+				break;
+			case 'insert':
+				container.insertBefore(advertisment, container.firstChild);
+				break;
+		}
 	};
 	this.init();
 }
