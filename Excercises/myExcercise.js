@@ -221,3 +221,30 @@ ScientificLibrary.Decimal = {
 console.log(new ScientificLibrary.Binary().sum(1,2));
 console.log(ScientificLibrary.Decimal.sum(1,2));
 //Exceptions
+
+//Symbol
+var symbol = Symbol("theNameOfMyPrivateProperty");
+class myClassWithPrivateProperty {
+  constructor() {
+    this[symbol] = "someValue";
+  }
+  get someValue() {
+    return this[symbol];
+  }
+}
+
+var excel = [
+  {
+    "sheet": {
+      name: "users",
+      rows: [
+        {A: "dssa", B: "..."}
+      ]
+    }
+  }
+];
+var mySheet = excel.find(function... { if name == "users" return objl });
+console.log(mySheet.name);
+for(row of mySheet.rows) {
+  console.log(row.A)
+}
